@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/space_background"
+    tools:context="project.cs4084.asteroids.LoginActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:textColorHint="#006699"
+        android:textColor="#006699"
+        android:ems="10"
+        android:layout_marginTop="39dp"
+        android:id="@+id/loginID"
+        android:hint="@string/username"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:textColorHint="#006699"
+        android:textColor="#006699"
+        android:ems="10"
+        android:id="@+id/loginPassword"
+        android:hint="@string/password"
+        android:layout_below="@+id/loginID"
+        android:layout_alignLeft="@+id/loginID"
+        android:layout_alignStart="@+id/loginID"
+        android:textAlignment="center" />
+
+    <Button
+        android:text="@string/login"
+        android:background="@drawable/custom_button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginButton"
+        android:textStyle="normal|bold|italic"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/loginPassword"
+        android:layout_alignLeft="@+id/loginGuest"
+        android:layout_alignStart="@+id/loginGuest" />
+
+    <TextView
+        android:background="@drawable/regimage"
+        android:textColor="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginRegisterLink"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="@string/play_as_guest"
+        android:background="@drawable/custom_button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginGuest"
+        android:textStyle="normal|bold|italic"
+        android:layout_below="@+id/loginButton"
+        android:layout_alignLeft="@+id/loginAbout"
+        android:layout_alignStart="@+id/loginAbout" />
+
+    <Button
+        android:text="@string/history"
+        android:background="@drawable/custom_button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginAbout"
+        android:textStyle="normal|bold|italic"
+        android:layout_below="@+id/loginGuest"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="@string/credits"
+        android:background="@drawable/custom_button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginCredits"
+        android:layout_below="@+id/loginAbout"
+        android:layout_centerHorizontal="true"
+        android:textStyle="normal|bold|italic" />
+
+    <Button
+        android:background="@drawable/custom_button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginPauseMusic"
+        android:textStyle="normal|bold|italic"
+        android:text="Sound On/Off"
+        android:layout_below="@+id/loginCredits"
+        android:layout_alignLeft="@+id/loginCredits"
+        android:layout_alignStart="@+id/loginCredits" />
+</RelativeLayout>

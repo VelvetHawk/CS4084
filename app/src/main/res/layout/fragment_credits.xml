@@ -1,0 +1,16 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="400dp"
+tools:context="project.cs4084.asteroids.CreditsFragment">
+
+<TextView
+    android:background="@drawable/creditsmoon"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:text="Brian Dooley\n(15123529)"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:textAppearance="?android:textAppearanceLarge"/>
+
+</FrameLayout>

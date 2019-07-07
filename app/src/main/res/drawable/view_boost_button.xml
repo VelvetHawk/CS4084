@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Before pressing -->
+    <item android:state_pressed="false">
+        <layer-list>
+
+            <item>
+                <shape android:shape="oval">
+                    <solid android:color="#707070"/>
+                </shape>
+            </item>
+
+            <item>
+                <bitmap android:src="@drawable/move"
+                        android:gravity="center"/>
+            </item>
+        </layer-list>
+    </item>
+
+    <!-- After pressing -->
+    <layer-list>
+
+        <item>
+            <shape android:shape="oval">
+                <solid android:color="#303030"/>
+            </shape>
+        </item>
+
+        <item>
+            <bitmap android:src="@drawable/move"
+                    android:gravity="center"/>
+        </item>
+    </layer-list>
+</selector>

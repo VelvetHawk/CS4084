@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/space_background"
+              android:weightSum="1">
+
+    <TextView
+        android:text="Your score"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:fontFamily="sans-serif-medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/your_score"
+        android:layout_marginTop="86dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Asteroids hit: "
+        android:id="@+id/asteroids_hit"
+        android:layout_marginRight="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/your_score"
+        android:layout_alignRight="@+id/your_score"
+        android:layout_alignEnd="@+id/your_score"/>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Bullets fired: "
+        android:id="@+id/bullets_fired"
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/asteroids_hit"
+        android:layout_alignLeft="@+id/asteroids_hit"
+        android:layout_alignStart="@+id/asteroids_hit"/>
+
+    <Button
+        android:background="@drawable/custom_button"
+        android:text="Play again?"
+        android:textStyle="bold|italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_play_again"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="playAgain"/>
+
+    <Button
+        android:background="@drawable/custom_button"
+        android:text="Return to menu"
+        android:textStyle="bold|italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_menu"
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/button_play_again"
+        android:layout_centerHorizontal="true"
+        android:onClick="home"/>
+</RelativeLayout>

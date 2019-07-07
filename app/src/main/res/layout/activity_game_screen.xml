@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:clipChildren="false">
+
+    <project.cs4084.asteroids.GamePanel
+        android:id="@+id/game_panel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"/>
+
+    <project.cs4084.asteroids.Joystick
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:id="@+id/joystick"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="26dp"/>
+
+    <Button
+        android:onClick="boost"
+        android:longClickable="true"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/game_boost_button"
+        android:background="@drawable/view_boost_button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/joystick"
+        android:layout_alignEnd="@+id/joystick"
+        android:layout_marginRight="19dp"
+        android:layout_marginEnd="19dp"/>
+
+    <Button
+        android:onClick="fire"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/game_fire_button"
+        android:background="@drawable/view_fire_button"
+        android:layout_marginBottom="52dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/joystick"
+        android:layout_alignStart="@+id/joystick"/>
+
+</RelativeLayout>
